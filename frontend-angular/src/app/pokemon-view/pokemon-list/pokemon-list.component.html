@@ -1,0 +1,24 @@
+<table class="highlight centered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>CP</th>
+      <th>Editar</th>
+      <th>Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemonList">
+      <td>{{ pokemon.id }}</td>
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.cp }}</td>
+      <td>
+        <img src="../../assets/edit.png" />
+      </td>
+      <td>
+        <img src="../../assets/remove.png" />
+      </td>
+    </tr>
+  </tbody>
+</table>

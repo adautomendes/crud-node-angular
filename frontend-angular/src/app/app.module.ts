@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
-import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
+import { PokemonListComponent } from './pokemon-view/pokemon-list/pokemon-list.component';
+import { PokemonFormComponent } from './pokemon-view/pokemon-form/pokemon-form.component';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
 
 @NgModule({
@@ -12,13 +13,10 @@ import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
     AppComponent,
     PokemonListComponent,
     PokemonFormComponent,
-    PokemonViewComponent
+    PokemonViewComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
