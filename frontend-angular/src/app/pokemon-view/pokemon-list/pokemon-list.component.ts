@@ -1,6 +1,6 @@
-import { Pokemon } from 'src/models/Pokemon';
 import { Component, OnInit } from '@angular/core';
 import { PokemonBackendService } from '../pokemon-backend.service';
+import { Pokemon } from '../pokemon';
 
 @Component({
   selector: 'app-pokemon-list',
